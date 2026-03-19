@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block tieu_de %}404 - Không tìm thấy trang{% endblock %}
+
+{% block noi_dung %}
+
+<section class="section-404">
+    <div class="container">
+        <div class="error-404-box">
+            <div class="error-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h1 class="error-code">404</h1>
+            <h2 class="error-message">Không tìm thấy trang!</h2>
+            <p class="error-mota">
+                Trang bạn đang tìm kiếm không tồn tại hoặc đã bị di chuyển.
+                <br>Có thể đường link bị sai hoặc nội dung chưa được cập nhật.
+            </p>
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary"><i class="fa-solid fa-house"></i> Về trang chủ</a>
+                <a href="/noi-dung" class="btn btn-secondary"><i class="fa-solid fa-square-root-variable"></i> Xem công thức</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

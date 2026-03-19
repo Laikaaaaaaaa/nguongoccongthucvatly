@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block tieu_de %}{{ cong_thuc.ten_cong_thuc }} - Nguồn gốc Công thức VL12{% endblock %}
+
+{% block noi_dung %}
+
+<!-- ========== HEADER CHI TIẾT ========== -->
+<section class="page-header page-header-ct">
+    <div class="container">
+        <a href="/noi-dung" class="btn-quay-lai">← Quay lại danh sách</a>
+        <div class="ct-header-info">
+            <span class="ct-header-icon"><i class="{{ cong_thuc.icon }}"></i></span>
+            <div>
+                <h1 class="page-title">{{ cong_thuc.ten_cong_thuc }}</h1>
+                <p class="ct-header-formula">{{ cong_thuc.cong_thuc }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== NỘI DUNG CHI TIẾT ========== -->
+<section class="section-chi-tiet">
+    <div class="container">
+        <div class="chi-tiet-layout">
+
+            <!-- ===== CỘT TRÁI: Nội dung chính ===== -->
+            <div class="chi-tiet-main">
+
+                <!-- Nhà khoa học -->
+                <div class="ct-block">
+                    <h2 class="ct-block-title"><i class="fa-solid fa-user-graduate"></i> Nhà khoa học</h2>
+                    <div class="nha-khoa-hoc-box">
+                        <div class="nkh-avatar">
+                            <img src="{{ cong_thuc.anh_nha_khoa_hoc }}"
+                                 alt="{{ cong_thuc.nha_khoa_hoc }}"
+                                 class="nkh-img"
+                                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="nkh-placeholder" style="display: none;">
+                                <span><i class="fa-regular fa-user"></i></span>
+                            </div>
+                        </div>
+                        <div class="nkh-info">
+                            <h3>{{ cong_thuc.nha_khoa_hoc }}</h3>
+                            <p class="nkh-mota">Người đặt nền tảng cho công thức {{ cong_thuc.ten_cong_thuc }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hoàn cảnh lịch sử -->
+                <div class="ct-block">
+                    <h2 class="ct-block-title"><i class="fa-solid fa-scroll"></i> Hoàn cảnh lịch sử ra đời</h2>
+                    <div class="ct-block-content lich-su-content">
+                        <p>{{ cong_thuc.hoan_canh_lich_su }}</p>
+                    </div>
+                </div>
+
+                <!-- Ý nghĩa -->
+                <div class="ct-block">
+                    <h2 class="ct-block-title"><i class="fa-regular fa-lightbulb"></i> Ý nghĩa của công thức</h2>
+                    <div class="ct-block-content">
+                        <p>{{ cong_thuc.y_nghia }}</p>
+                    </div>
+                </div>
+
+                {% if cong_thuc.danh_sach_cong_thuc %}
+                <!-- Danh sách công thức đầy đủ -->
+                <div class="ct-block">
+                    <h2 class="ct-block-title"><i class="fa-solid fa-list-check"></i> Danh sách công thức đầy đủ</h2>
+                    <div class="ct-block-content">
+                        <ul class="ds-cong-thuc-day-du">
+                            {% for ct_day_du in cong_thuc.danh_sach_cong_thuc %}
+                            <li>{{ ct_day_du }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endif %}
+
+                <!-- Ứng dụng -->
+                <div class="ct-block">
+                    <h2 class="ct-block-title"><i class="fa-solid fa-bullseye"></i> Ứng dụng thực tế</h2>
+                    <div class="ct-block-content">
+                        <ul class="ung-dung-list">
+                            {% for ud in cong_thuc.ung_dung %}
+                            <li>
+                                <span class="ud-bullet">▸</span>
+                                {{ ud }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Video minh họa -->
+                <div class="ct-block">
+                    <h2 class="ct-block-title"><i class="fa-solid fa-film"></i> Video minh họa</h2>
+                    <div class="video-container">
+                        {% if cong_thuc.video_youtube %}
+                        <iframe src="{{ cong_thuc.video_youtube }}"
+                                title="Video minh họa {{ cong_thuc.ten_cong_thuc }}"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                        </iframe>
+                        {% else %}
+                        <div class="video-placeholder">
+                            <span><i class="fa-solid fa-clapperboard"></i></span>
+                            <p>Video đang được chuẩn bị...</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== CỘT PHẢI: Sidebar ===== -->
+            <div class="chi-tiet-sidebar">
+                <!-- Card công thức -->
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title"><i class="fa-solid fa-square-root-variable"></i> Công thức</h3>
+                    <div class="formula-display">
+                        <span class="formula-big">{{ cong_thuc.cong_thuc }}</span>
+                    </div>
+                    <p class="formula-note">{{ cong_thuc.mo_ta_ngan }}</p>
+                </div>
+
+                <!-- Nút tạo video AI -->
+                <div class="sidebar-card sidebar-ai">
+                    <h3 class="sidebar-title"><i class="fa-solid fa-robot"></i> AI tạo Video</h3>
+                    <p>Để AI tạo video minh họa lịch sử ra đời của công thức này!</p>
+                    <button class="btn btn-primary btn-block js-tao-video-chi-tiet"
+                            data-id="{{ cong_thuc.id }}"
+                            data-ten="{{ cong_thuc.ten_cong_thuc }}">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Tạo Video AI
+                    </button>
+                    <div id="ai-result-sidebar" class="ai-result-sidebar" style="display: none;">
+                        <!-- JS sẽ điền kết quả -->
+                    </div>
+                </div>
+
+                <!-- Quick links -->
+                <div class="sidebar-card">
+                    <h3 class="sidebar-title"><i class="fa-solid fa-link"></i> Xem thêm</h3>
+                    <ul class="sidebar-links">
+                        <li><a href="/noi-dung"><i class="fa-solid fa-square-root-variable"></i> Tất cả công thức</a></li>
+                        <li><a href="/gioi-thieu"><i class="fa-solid fa-book-open"></i> Về dự án</a></li>
+                        <li><a href="/lien-he"><i class="fa-solid fa-envelope"></i> Liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ========== POPUP VIDEO AI ========== -->
+<div id="popup-video-ai" class="popup-overlay" style="display: none;">
+    <div class="popup-content">
+        <button class="popup-close" onclick="dongPopup()">&times;</button>
+        <div id="popup-noi-dung">
+            <!-- JS sẽ điền nội dung vào đây -->
+        </div>
+    </div>
+</div>
+
+{% endblock %}

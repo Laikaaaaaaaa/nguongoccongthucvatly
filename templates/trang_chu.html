@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+
+{% block tieu_de %}Trang chủ - Nguồn gốc Công thức Vật Lí 12{% endblock %}
+
+{% block noi_dung %}
+
+<!-- ========== HERO SECTION ========== -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <!-- Nội dung bên trái -->
+            <div class="hero-text">
+                <p class="hero-subtitle"><i class="fa-solid fa-flask-vial"></i> Dự án học tập Vật Lí 12</p>
+                <h1 class="hero-title">
+                    Tại sao công thức<br>
+                    <span class="hero-highlight">Vật Lí</span> lại ra đời?
+                </h1>
+                <p class="hero-mo-ta">
+                    Khám phá câu chuyện lịch sử đằng sau mỗi công thức Vật Lí lớp 12.
+                    Hiểu được nguồn gốc giúp bạn nhớ lâu hơn và yêu thích môn học hơn!
+                </p>
+                <div class="hero-buttons">
+                    <a href="/noi-dung" class="btn btn-primary"><i class="fa-solid fa-square-root-variable"></i> Khám phá ngay</a>
+                    <a href="/gioi-thieu" class="btn btn-secondary"><i class="fa-solid fa-book-open-reader"></i> Tìm hiểu thêm</a>
+                </div>
+            </div>
+
+            <!-- Hình minh họa bên phải -->
+            <div class="hero-image">
+                <div class="hero-placeholder">
+                    <div class="placeholder-icon"><i class="fa-solid fa-microscope"></i></div>
+                    <div class="placeholder-formulas">
+                        <span>F = ma</span>
+                        <span>E = mc²</span>
+                        <span>U = IR</span>
+                        <span>W = ½mv²</span>
+                    </div>
+                    <p class="placeholder-text">Vật Lí là thơ của tự nhiên</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== SECTION: TẠI SAO HỌC LỊCH SỬ CÔNG THỨC? ========== -->
+<section class="section-tai-sao">
+    <div class="container">
+        <h2 class="section-title">Tại sao cần biết lịch sử công thức?</h2>
+        <p class="section-subtitle">Hiểu nguồn gốc = Nhớ lâu hơn + Yêu thích hơn</p>
+
+        <div class="tai-sao-grid">
+            <!-- Lý do 1 -->
+            <div class="tai-sao-card">
+                <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+                <h3>Nhớ lâu hơn</h3>
+                <p>Khi biết câu chuyện đằng sau công thức, não bộ sẽ liên kết thông tin
+                   tốt hơn so với việc học thuộc lòng.</p>
+            </div>
+
+            <!-- Lý do 2 -->
+            <div class="tai-sao-card">
+                <div class="card-icon"><i class="fa-regular fa-lightbulb"></i></div>
+                <h3>Hiểu bản chất</h3>
+                <p>Biết tại sao nhà khoa học lại nghĩ ra công thức đó, bạn sẽ hiểu
+                   ý nghĩa thực sự của từng đại lượng.</p>
+            </div>
+
+            <!-- Lý do 3 -->
+            <div class="tai-sao-card">
+                <div class="card-icon"><i class="fa-solid fa-clapperboard"></i></div>
+                <h3>AI tạo video</h3>
+                <p>Kết hợp công nghệ AI để tạo video minh họa sinh động,
+                   giúp bạn hình dung rõ hơn câu chuyện lịch sử.</p>
+            </div>
+
+            <!-- Lý do 4 -->
+            <div class="tai-sao-card">
+                <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <h3>Ứng dụng thực tế</h3>
+                <p>Mỗi công thức đều có ứng dụng trong đời sống. Hiểu nguồn gốc
+                   giúp bạn thấy Vật Lí gần gũi hơn.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== SECTION: CÔNG THỨC NỔI BẬT ========== -->
+<section class="section-noi-bat">
+    <div class="container">
+        <h2 class="section-title">Các công thức nổi bật</h2>
+        <p class="section-subtitle">Click vào để xem câu chuyện lịch sử thú vị!</p>
+
+        <div class="cong-thuc-grid">
+            {% for ct in ds_cong_thuc[:6] %}
+            <div class="cong-thuc-card js-tilt-card" onclick="window.location.href='/cong-thuc/{{ ct.id }}'">
+                <div class="ct-card-icon"><i class="{{ ct.icon }}"></i></div>
+                <h3 class="ct-card-ten">{{ ct.ten_cong_thuc }}</h3>
+                <p class="ct-card-formula">{{ ct.cong_thuc }}</p>
+                <p class="ct-card-mota">{{ ct.mo_ta_ngan }}</p>
+                <div class="ct-card-nkh">
+                    <small><i class="fa-solid fa-user-graduate"></i> {{ ct.nha_khoa_hoc }}</small>
+                </div>
+                <a href="/cong-thuc/{{ ct.id }}" class="btn btn-outline btn-sm">Xem chi tiết →</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- ========== SECTION: AI VIDEO DEMO ========== -->
+<section class="section-ai-demo">
+    <div class="container">
+        <h2 class="section-title"><i class="fa-solid fa-clapperboard"></i> Trải nghiệm AI tạo Video</h2>
+        <p class="section-subtitle">Chọn một công thức và để AI tạo video minh họa cho bạn!</p>
+
+        <div class="ai-demo-box">
+            <div class="ai-controls">
+                <select id="chon-cong-thuc" class="ai-select">
+                    <option value="">-- Chọn công thức --</option>
+                    {% for ct in ds_cong_thuc %}
+                    <option value="{{ ct.id }}">{{ ct.ten_cong_thuc }} ({{ ct.cong_thuc }})</option>
+                    {% endfor %}
+                </select>
+                <button id="btn-tao-video" class="btn btn-primary" onclick="taoVideoAI()">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i> Tạo Video AI
+                </button>
+            </div>
+
+            <!-- Khu vực hiển thị loading và kết quả -->
+            <div id="ai-ket-qua" class="ai-result" style="display: none;">
+                <!-- Sẽ được JS điền vào -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== SLOGAN CUỐI TRANG ========== -->
+<section class="section-slogan">
+    <div class="container">
+        <div class="slogan-box">
+            <p class="slogan-text">
+                "Đằng sau mỗi công thức là cả một hành trình khám phá của nhân loại.<br>
+                <strong>Hãy để lịch sử giúp bạn yêu Vật Lí hơn!</strong>"
+            </p>
+            <a href="/noi-dung" class="btn btn-lg btn-kham-pha" aria-label="Bắt đầu khám phá công thức vật lí">
+                <span class="btn-kham-pha-text"><i class="fa-solid fa-rocket"></i> Bắt đầu khám phá</span>
+                <span class="btn-kham-pha-glow" aria-hidden="true"></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

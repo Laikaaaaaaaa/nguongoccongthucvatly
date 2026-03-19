@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block tieu_de %}Nguồn gốc Công thức Vật Lí 12{% endblock %}</title>
+
+    <!-- CSS chính -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Font chữ từ Google Fonts (hỗ trợ tiếng Việt tốt) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&family=Noto+Serif:wght@500;700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    {% block them_css %}{% endblock %}
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <!-- Logo / Tên website -->
+            <a href="/" class="navbar-logo">
+                <span class="logo-icon"><i class="fa-solid fa-atom"></i></span>
+                <span class="logo-text">VậtLí<span class="logo-highlight">12</span></span>
+            </a>
+
+            <!-- Nút hamburger cho mobile -->
+            <button class="navbar-toggle" id="btn-toggle-menu" aria-label="Mở menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Menu điều hướng -->
+            <ul class="navbar-menu" id="menu-chinh">
+                <li><a href="/" class="nav-link {% if request.path == '/' %}active{% endif %}"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+                <li><a href="/gioi-thieu" class="nav-link {% if request.path == '/gioi-thieu' %}active{% endif %}"><i class="fa-solid fa-book-open"></i> Giới thiệu</a></li>
+                <li><a href="/noi-dung" class="nav-link {% if request.path == '/noi-dung' or '/cong-thuc/' in request.path %}active{% endif %}"><i class="fa-solid fa-square-root-variable"></i> Nội dung</a></li>
+                <li><a href="/lien-he" class="nav-link {% if request.path == '/lien-he' %}active{% endif %}"><i class="fa-solid fa-envelope"></i> Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== NỘI DUNG CHÍNH ========== -->
+    <main class="main-content">
+        {% block noi_dung %}{% endblock %}
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Cột thông tin -->
+                <div class="footer-col">
+                    <h3 class="footer-title"><i class="fa-solid fa-atom"></i> Nguồn gốc Công thức VL12</h3>
+                    <p class="footer-mota">
+                        Dự án học tập kết hợp lịch sử khoa học và trí tuệ nhân tạo
+                        để giải thích nguồn gốc các công thức Vật Lí lớp 12.
+                    </p>
+                </div>
+
+                <!-- Cột liên kết nhanh -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Liên kết nhanh</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Trang chủ</a></li>
+                        <li><a href="/gioi-thieu">Giới thiệu</a></li>
+                        <li><a href="/noi-dung">Nội dung</a></li>
+                        <li><a href="/lien-he">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột thành viên -->
+                <div class="footer-col">
+                    <h3 class="footer-title">Nhóm thực hiện</h3>
+                    <p class="footer-ten-nhom"><i class="fa-solid fa-location-dot"></i> Nhóm: Vo-Viet-Anh</p>
+                    <ul class="footer-thanh-vien">
+                        <li><i class="fa-regular fa-user"></i> Võ Việt Anh - Trưởng nhóm</li>
+                        <li><i class="fa-regular fa-user"></i> Thành viên 2</li>
+                        <li><i class="fa-regular fa-user"></i> Thành viên 3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Dòng cuối footer -->
+            <div class="footer-bottom">
+                <p>© 2026 Nhóm Vo-Viet-Anh | Dự án học tập Vật Lí 12</p>
+                <p class="footer-note">Ứng dụng lịch sử vào việc giải thích nguồn gốc các công thức Vật Lí kết hợp AI tạo video</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript chính -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    {% block them_js %}{% endblock %}
+</body>
+</html>

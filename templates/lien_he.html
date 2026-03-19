@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block tieu_de %}Liên hệ - Nguồn gốc Công thức Vật Lí 12{% endblock %}
+
+{% block noi_dung %}
+
+<!-- ========== HEADER TRANG ========== -->
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title"><i class="fa-solid fa-envelope"></i> Liên hệ với chúng mình</h1>
+        <p class="page-subtitle">Góp ý, câu hỏi hay đề xuất gì? Hãy gửi cho tụi mình nhé!</p>
+    </div>
+</section>
+
+<!-- ========== FORM LIÊN HỆ ========== -->
+<section class="section-lien-he">
+    <div class="container">
+        <div class="lien-he-layout">
+
+            <!-- Cột trái: Form -->
+            <div class="lien-he-form-col">
+                <div class="form-container">
+                    <h2><i class="fa-solid fa-pen-to-square"></i> Gửi tin nhắn</h2>
+
+                    <!-- Thông báo nếu có -->
+                    {% if thong_bao %}
+                    <div class="alert alert-{{ thong_bao.loai }}">
+                        {% if thong_bao.loai == 'thanh_cong' %}
+                            <i class="fa-solid fa-circle-check"></i> {{ thong_bao.noi_dung }}
+                        {% else %}
+                            <i class="fa-solid fa-triangle-exclamation"></i> {{ thong_bao.noi_dung }}
+                        {% endif %}
+                    </div>
+                    {% endif %}
+
+                    <form method="POST" action="/lien-he" id="form-lien-he">
+                        <!-- Họ tên -->
+                        <div class="form-group">
+                            <label for="ho_ten">Họ và tên <span class="required">*</span></label>
+                            <input type="text" id="ho_ten" name="ho_ten"
+                                   class="form-input"
+                                   placeholder="VD: Nguyễn Văn A"
+                                   required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email"
+                                   class="form-input"
+                                   placeholder="VD: example@gmail.com"
+                                   required>
+                        </div>
+
+                        <!-- Chủ đề (không bắt buộc) -->
+                        <div class="form-group">
+                            <label for="chu_de">Chủ đề</label>
+                            <select id="chu_de" name="chu_de" class="form-input">
+                                <option value="gop_y">Góp ý chung</option>
+                                <option value="cau_hoi">Câu hỏi về nội dung</option>
+                                <option value="loi">Báo lỗi website</option>
+                                <option value="hop_tac">Hợp tác</option>
+                                <option value="khac">Khác</option>
+                            </select>
+                        </div>
+
+                        <!-- Nội dung -->
+                        <div class="form-group">
+                            <label for="noi_dung">Nội dung <span class="required">*</span></label>
+                            <textarea id="noi_dung" name="noi_dung"
+                                      class="form-input form-textarea"
+                                      placeholder="Nhập nội dung tin nhắn của bạn..."
+                                      rows="6"
+                                      required></textarea>
+                        </div>
+
+                        <!-- Nút gửi -->
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-paper-plane"></i> Gửi tin nhắn
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Cột phải: Thông tin liên hệ -->
+            <div class="lien-he-info-col">
+                <div class="lh-info-card">
+                    <h2><i class="fa-solid fa-location-dot"></i> Thông tin liên hệ</h2>
+
+                    <div class="lh-info-item">
+                        <span class="lh-icon"><i class="fa-solid fa-users"></i></span>
+                        <div>
+                            <h4>Nhóm thực hiện</h4>
+                            <p>Nhóm Vo-Viet-Anh</p>
+                        </div>
+                    </div>
+
+                    <div class="lh-info-item">
+                        <span class="lh-icon"><i class="fa-solid fa-school"></i></span>
+                        <div>
+                            <h4>Trường</h4>
+                            <p>Trường THPT [Tên trường]</p>
+                        </div>
+                    </div>
+
+                    <div class="lh-info-item">
+                        <span class="lh-icon"><i class="fa-solid fa-envelope"></i></span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>nhom.vovietanh@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="lh-info-item">
+                        <span class="lh-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                        <div>
+                            <h4>Mạng xã hội</h4>
+                            <p>Facebook: Nhóm Vo-Viet-Anh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lưu ý -->
+                <div class="lh-note-card">
+                    <h3><i class="fa-regular fa-lightbulb"></i> Lưu ý</h3>
+                    <ul>
+                        <li>Chúng mình sẽ phản hồi trong vòng 24h</li>
+                        <li>Mọi góp ý đều rất quý giá với tụi mình!</li>
+                        <li>Nếu phát hiện sai sót về nội dung, vui lòng báo cho chúng mình biết nhé</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

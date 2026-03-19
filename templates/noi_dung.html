@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+
+{% block tieu_de %}Nội dung - Danh sách Công thức Vật Lí 12{% endblock %}
+
+{% block noi_dung %}
+
+<!-- ========== HEADER TRANG ========== -->
+<section class="page-header">
+    <div class="container">
+        <h1 class="page-title"><i class="fa-solid fa-square-root-variable"></i> Danh sách Công thức Vật Lí</h1>
+        <p class="page-subtitle">Click vào mỗi công thức để xem lịch sử ra đời và ý nghĩa</p>
+    </div>
+</section>
+
+<!-- ========== THANH TÌM KIẾM ========== -->
+<section class="section-tim-kiem">
+    <div class="container">
+        <div class="tim-kiem-box">
+            <input type="text" id="input-tim-kiem" class="input-tim-kiem"
+                   placeholder="Tìm kiếm công thức... (VD: Newton, Ohm, Động năng)"
+                   oninput="timKiemCongThuc()">
+            <p class="tim-kiem-ket-qua" id="ket-qua-tim">
+                Hiển thị {{ ds_cong_thuc|length }} công thức
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ========== DANH SÁCH CÔNG THỨC ========== -->
+<section class="section-danh-sach">
+    <div class="container">
+        <div class="danh-sach-ct" id="danh-sach-cong-thuc">
+
+            {% for ct in ds_cong_thuc %}
+            <!-- Card công thức {{ ct.id }} -->
+            <div class="ct-detail-card" data-ten="{{ ct.ten_cong_thuc }}" data-nkh="{{ ct.nha_khoa_hoc }}">
+                <div class="ct-detail-left">
+                    <!-- Icon và công thức -->
+                    <div class="ct-detail-icon"><i class="{{ ct.icon }}"></i></div>
+                    <div class="ct-detail-formula-box">
+                        <h2 class="ct-detail-ten">{{ ct.ten_cong_thuc }}</h2>
+                        <p class="ct-detail-formula">{{ ct.cong_thuc }}</p>
+                        <p class="ct-detail-nkh"><i class="fa-solid fa-user-graduate"></i> {{ ct.nha_khoa_hoc }}</p>
+                    </div>
+                </div>
+
+                <div class="ct-detail-right">
+                    <!-- Mô tả ngắn -->
+                    <p class="ct-detail-mota">{{ ct.mo_ta_ngan }}</p>
+
+                    <!-- Hoàn cảnh lịch sử (rút gọn) -->
+                    <div class="ct-detail-lich-su">
+                        <h4><i class="fa-solid fa-scroll"></i> Hoàn cảnh lịch sử:</h4>
+                        <p>{{ ct.hoan_canh_lich_su[:200] }}...</p>
+                    </div>
+
+                    <!-- Nút hành động -->
+                    <div class="ct-detail-actions">
+                        <a href="/cong-thuc/{{ ct.id }}" class="btn btn-primary">Xem đầy đủ →</a>
+                        <button class="btn btn-outline btn-ai js-tao-video-nhanh"
+                                data-id="{{ ct.id }}"
+                                data-ten="{{ ct.ten_cong_thuc }}">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Tạo Video AI
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+        <!-- Khi không tìm thấy kết quả -->
+        <div id="khong-tim-thay" class="khong-tim-thay" style="display: none;">
+            <div class="ktk-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <p>Không tìm thấy công thức nào phù hợp!</p>
+            <p class="ktk-goi-y">Thử tìm kiếm với từ khóa khác nhé.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ========== POPUP VIDEO AI ========== -->
+<div id="popup-video-ai" class="popup-overlay" style="display: none;">
+    <div class="popup-content">
+        <button class="popup-close" onclick="dongPopup()">&times;</button>
+        <div id="popup-noi-dung">
+            <!-- JS sẽ điền nội dung vào đây -->
+        </div>
+    </div>
+</div>
+
+{% endblock %}

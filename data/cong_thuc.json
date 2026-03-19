@@ -1,0 +1,449 @@
+[
+    {
+        "id": 1,
+        "ten_cong_thuc": "Định luật II Newton",
+        "cong_thuc": "F = m × a",
+        "nha_khoa_hoc": "Isaac Newton (1643 - 1727)",
+        "anh_nha_khoa_hoc": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/440px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg",
+        "hoan_canh_lich_su": "Vào thế kỷ 17, khi Isaac Newton ngồi dưới gốc cây táo và quan sát quả táo rơi, ông đã đặt câu hỏi: \"Tại sao mọi vật lại rơi xuống đất?\" Từ câu hỏi tưởng chừng đơn giản đó, Newton đã dành hàng chục năm nghiên cứu và cho ra đời bộ ba định luật Newton về chuyển động. Định luật II Newton được công bố trong cuốn 'Philosophiæ Naturalis Principia Mathematica' (Nguyên lý toán học của triết học tự nhiên) năm 1687. Đây là thời kỳ Cách mạng Khoa học ở châu Âu, khi các nhà khoa học bắt đầu dùng toán học để giải thích các hiện tượng tự nhiên thay vì chỉ dựa vào quan sát định tính.",
+        "y_nghia": "Định luật II Newton cho biết mối quan hệ giữa lực tác dụng lên một vật, khối lượng của vật và gia tốc mà vật thu được. Nó là nền tảng của cơ học cổ điển, giúp chúng ta hiểu tại sao các vật chuyển động nhanh hay chậm, và dự đoán được quỹ đạo chuyển động của vật thể. Không có định luật này, con người không thể phóng tên lửa hay thiết kế ô tô an toàn.",
+        "ung_dung": [
+            "Tính toán lực cần thiết để phóng tên lửa vào vũ trụ",
+            "Thiết kế hệ thống phanh ABS cho ô tô",
+            "Tính toán lực kéo trong xây dựng cầu đường",
+            "Mô phỏng chuyển động trong game và phim hoạt hình",
+            "Thiết kế thang máy và hệ thống nâng hạ"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/kKKM8Y-u7ds",
+        "mo_ta_ngan": "Lực tác dụng lên vật bằng khối lượng nhân gia tốc. Nền tảng của cơ học cổ điển.",
+        "icon": "fa-solid fa-apple-whole"
+    },
+    {
+        "id": 2,
+        "ten_cong_thuc": "Định luật Ohm",
+        "cong_thuc": "U = I × R",
+        "nha_khoa_hoc": "Georg Simon Ohm (1789 - 1854)",
+        "anh_nha_khoa_hoc": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Georg_Simon_Ohm3.jpg/440px-Georg_Simon_Ohm3.jpg",
+        "hoan_canh_lich_su": "Đầu thế kỷ 19, ngành điện học còn rất sơ khai. Georg Ohm - một giáo viên vật lí người Đức - đã tự mình chế tạo các dây dẫn bằng đồng với độ dài và tiết diện khác nhau, rồi kiên nhẫn đo dòng điện chạy qua chúng. Ông làm việc trong điều kiện rất thiếu thốn, thiết bị thô sơ, nhưng nhờ sự kiên trì phi thường, năm 1827 ông đã công bố định luật mang tên mình. Ban đầu, cộng đồng khoa học Đức không công nhận công trình này, thậm chí còn chế nhạo ông. Phải đến nhiều năm sau, khi các nhà khoa học Anh và Pháp kiểm chứng, định luật Ohm mới được thừa nhận rộng rãi.",
+        "y_nghia": "Định luật Ohm mô tả mối quan hệ tỉ lệ thuận giữa hiệu điện thế (U) và cường độ dòng điện (I) chạy qua vật dẫn, với hệ số tỉ lệ là điện trở (R). Đây là công thức cơ bản nhất của điện học, giúp kỹ sư tính toán và thiết kế mọi mạch điện từ đơn giản đến phức tạp.",
+        "ung_dung": [
+            "Thiết kế mạch điện tử trong điện thoại, máy tính",
+            "Tính toán dây dẫn điện trong nhà và công nghiệp",
+            "Thiết kế hệ thống chiếu sáng",
+            "Sản xuất các linh kiện điện tử (điện trở, biến trở)",
+            "An toàn điện - tính toán dòng điện an toàn cho cơ thể người"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/HsLLq6Rm5tU",
+        "mo_ta_ngan": "Hiệu điện thế bằng cường độ dòng điện nhân điện trở. Nền tảng của điện học.",
+        "icon": "fa-solid fa-bolt"
+    },
+    {
+        "id": 3,
+        "ten_cong_thuc": "Công thức Động năng",
+        "cong_thuc": "Wđ = ½ × m × v²",
+        "nha_khoa_hoc": "Gottfried Wilhelm Leibniz (1646 - 1716) & Émilie du Châtelet (1706 - 1749)",
+        "anh_nha_khoa_hoc": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Gottfried_Wilhelm_von_Leibniz.jpg/440px-Gottfried_Wilhelm_von_Leibniz.jpg",
+        "hoan_canh_lich_su": "Khái niệm động năng có một lịch sử tranh luận thú vị. Ban đầu, Leibniz (nhà toán học người Đức, người đồng phát minh ra phép tính vi phân) đề xuất khái niệm 'vis viva' (lực sống) bằng m×v² vào năm 1686. Ông nhận ra rằng khi một vật rơi từ độ cao gấp 4 lần, vận tốc chạm đất chỉ gấp 2 lần - chứng tỏ năng lượng tỉ lệ với bình phương vận tốc. Tuy nhiên, Newton và các học trò lại cho rằng 'lực sống' chỉ bằng m×v. Cuộc tranh luận kéo dài gần 50 năm! Cuối cùng, Émilie du Châtelet - nữ nhà vật lí người Pháp, đã làm thí nghiệm thả vật xuống đất sét và đo vết lún, chứng minh Leibniz đúng. Hệ số ½ được thêm vào sau bởi Gaspard-Gustave de Coriolis năm 1829 để công thức tương thích với các phương trình cơ học khác.",
+        "y_nghia": "Công thức động năng cho biết năng lượng mà một vật có được nhờ chuyển động. Nó tỉ lệ thuận với khối lượng và bình phương vận tốc, nghĩa là vận tốc ảnh hưởng đến năng lượng nhiều hơn rất nhiều so với khối lượng. Điều này giải thích tại sao tai nạn giao thông ở tốc độ cao lại nguy hiểm hơn rất nhiều.",
+        "ung_dung": [
+            "Tính toán năng lượng va chạm trong tai nạn giao thông",
+            "Thiết kế hệ thống an toàn cho ô tô (túi khí, vùng hấp thụ va chạm)",
+            "Tính toán năng lượng gió trong tuabin điện gió",
+            "Thiết kế đạn đạo và vũ khí quân sự",
+            "Phân tích chuyển động trong thể thao (bóng đá, tennis...)"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/Jnj8mc04r9E",
+        "mo_ta_ngan": "Động năng bằng một nửa khối lượng nhân bình phương vận tốc. Năng lượng của chuyển động.",
+        "icon": "fa-solid fa-rocket"
+    },
+    {
+        "id": 4,
+        "ten_cong_thuc": "Tổng hợp công thức Chương I - Dao động cơ",
+        "cong_thuc": "Bộ công thức dao động điều hòa, con lắc lò xo, con lắc đơn",
+        "nha_khoa_hoc": "Tổng hợp Vật Lí 12",
+        "anh_nha_khoa_hoc": "",
+        "hoan_canh_lich_su": "Chương Dao động cơ là phần nền tảng mô tả chuyển động tuần hoàn trong cơ học cổ điển. Hệ công thức được xây dựng từ cơ học Newton và mở rộng cho các hệ dao động thực tế.",
+        "y_nghia": "Giúp giải nhanh bài toán về li độ, vận tốc, gia tốc, lực kéo về, năng lượng và tổng hợp dao động trong chương trình Vật Lí 12.",
+        "ung_dung": [
+            "Giải bài toán con lắc lò xo và con lắc đơn",
+            "Xác định chu kỳ, tần số, tần số góc",
+            "Tính năng lượng và cực trị vận tốc, gia tốc"
+        ],
+        "danh_sach_cong_thuc": [
+            "x = A cos(ωt + φ)",
+            "v = -ωA sin(ωt + φ)",
+            "a = -ω²A cos(ωt + φ)",
+            "a = -ω²x",
+            "Fkv = ma = -mω²x = -kx",
+            "ω = 2πf = 2π/T",
+            "f = 1/T",
+            "T = 2π√(m/k)",
+            "ω = √(k/m)",
+            "v² = ω²(A² - x²)",
+            "Wđ = 1/2 mv²",
+            "Wt = 1/2 kx²",
+            "W = Wđ + Wt = 1/2 kA² = 1/2 mω²A²",
+            "vmax = ωA",
+            "amax = ω²A",
+            "Fmax = kA",
+            "s = S0 cos(ωt + φ)",
+            "α = α0 cos(ωt + φ)",
+            "s = αl",
+            "v = -ωS0 sin(ωt + φ)",
+            "a = -ω²s = -ω²αl",
+            "F = -mgsinα ≈ -mgα = -mω²s",
+            "T_con_lắc_đơn = 2π√(l/g)",
+            "ω_con_lắc_đơn = √(g/l)",
+            "f_con_lắc_đơn = 1/(2π)√(g/l)",
+            "x1 = A1 cos(ωt + φ1)",
+            "x2 = A2 cos(ωt + φ2)",
+            "Δφ = φ2 - φ1",
+            "A = √(A1² + A2² + 2A1A2 cosΔφ)"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/Jnj8mc04r9E",
+        "mo_ta_ngan": "Full công thức dao động cơ lớp 12 theo chương.",
+        "icon": "fa-solid fa-wave-square"
+    },
+    {
+        "id": 5,
+        "ten_cong_thuc": "Tổng hợp công thức Chương II - Sóng cơ và sóng âm",
+        "cong_thuc": "Bộ công thức sóng cơ, giao thoa sóng và mức cường độ âm",
+        "nha_khoa_hoc": "Tổng hợp Vật Lí 12",
+        "anh_nha_khoa_hoc": "",
+        "hoan_canh_lich_su": "Sóng cơ và sóng âm là sự lan truyền dao động trong môi trường vật chất, đóng vai trò cốt lõi trong âm học và kỹ thuật truyền sóng.",
+        "y_nghia": "Hỗ trợ giải bài toán truyền sóng, giao thoa, cực đại cực tiểu, mức cường độ âm và các đặc điểm môi trường truyền âm.",
+        "ung_dung": [
+            "Tính bước sóng, tần số, vận tốc sóng",
+            "Xác định điều kiện giao thoa cực đại/cực tiểu",
+            "Bài toán cường độ âm và mức cường độ âm"
+        ],
+        "danh_sach_cong_thuc": [
+            "v = λf = λ/T",
+            "λ = v/f = vT",
+            "Tsóng = Tdao_động = Tnguồn",
+            "fsóng = fdao_động = fnguồn",
+            "Độ lệch pha: Δφ = 2πd/λ",
+            "Cực đại giao thoa: Δd = d2 - d1 = kλ",
+            "Cực tiểu giao thoa: Δd = d2 - d1 = (k + 1/2)λ",
+            "Cường độ âm: I = P/S = P/(4πr²)",
+            "Mức cường độ âm (B): L = log(I/I0)",
+            "Mức cường độ âm (dB): L = 10 log(I/I0)",
+            "v_phần_tử_max = ωA",
+            "vận tốc truyền sóng là vận tốc truyền pha dao động",
+            "sóng âm truyền được trong khí, lỏng, rắn (không truyền trong chân không)",
+            "sóng âm trong khí và lỏng là sóng dọc",
+            "sóng âm trong rắn gồm cả sóng ngang và sóng dọc"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/HsLLq6Rm5tU",
+        "mo_ta_ngan": "Full công thức sóng cơ và sóng âm lớp 12 theo chương.",
+        "icon": "fa-solid fa-water"
+    },
+    {
+        "id": 6,
+        "ten_cong_thuc": "Tổng hợp công thức Chương III - Dòng điện xoay chiều",
+        "cong_thuc": "Bộ công thức AC, mạch RLC, công suất và cộng hưởng",
+        "nha_khoa_hoc": "Tổng hợp Vật Lí 12",
+        "anh_nha_khoa_hoc": "",
+        "hoan_canh_lich_su": "Dòng điện xoay chiều là nền tảng của hệ thống điện hiện đại. Hệ công thức được dùng để mô tả điện áp, dòng điện, trở kháng và công suất trong mạch AC.",
+        "y_nghia": "Giúp xử lý trọn bộ bài toán mạch điện xoay chiều, độ lệch pha, cộng hưởng và năng lượng trong cuộn cảm, tụ điện.",
+        "ung_dung": [
+            "Giải mạch RLC nối tiếp",
+            "Tính công suất và hệ số công suất",
+            "Tìm điều kiện cộng hưởng và cực trị dòng điện"
+        ],
+        "danh_sach_cong_thuc": [
+            "Từ thông: Φ = NBScos(ωt + φ)",
+            "Suất điện động: e = E0cos(ωt + φ - π/2)",
+            "E0 = ωNBS",
+            "i = I0cos(ωt + φi)",
+            "u = U0cos(ωt + φu)",
+            "I = I0/√2",
+            "U = U0/√2",
+            "ZL = ωL",
+            "ZC = 1/(ωC)",
+            "Tổng trở: Z = √(R² + (ZL - ZC)²)",
+            "I0 = U0/Z ; I = U/Z",
+            "Độ lệch pha: tanφ = (ZL - ZC)/R (với φ = φu - φi)",
+            "Hệ số công suất: cosφ = R/Z = UR/U",
+            "Công suất: P = UIcosφ = I²R",
+            "Nhiệt lượng tỏa ra: Q = I²Rt",
+            "uR cùng pha với i",
+            "uL sớm pha hơn i góc π/2",
+            "uC trễ pha hơn i góc π/2",
+            "Điện áp tức thời: u = uR + uL + uC",
+            "Điện áp hiệu dụng: U = √(UR² + (UL - UC)²)",
+            "UR = IR ; UL = IZL ; UC = IZC",
+            "Điều kiện cộng hưởng: ZL = ZC hay ω = 1/√(LC)",
+            "Khi cộng hưởng: Imax = U/R ; Pmax = U²/R"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/8AHCfZTRGiI",
+        "mo_ta_ngan": "Full công thức dòng điện xoay chiều lớp 12 theo chương.",
+        "icon": "fa-solid fa-bolt"
+    },
+    {
+        "id": 7,
+        "ten_cong_thuc": "Tổng hợp công thức Chương IV - Dao động điện từ",
+        "cong_thuc": "Bộ công thức mạch LC và năng lượng điện từ",
+        "nha_khoa_hoc": "Tổng hợp Vật Lí 12",
+        "anh_nha_khoa_hoc": "",
+        "hoan_canh_lich_su": "Dao động điện từ mô tả sự biến thiên tuần hoàn của điện tích và dòng điện trong mạch LC, là nền tảng của sóng điện từ và truyền thông vô tuyến.",
+        "y_nghia": "Giải các bài toán liên quan đến điện tích, dòng điện, tần số riêng và bảo toàn năng lượng điện từ trong mạch dao động.",
+        "ung_dung": [
+            "Tính chu kỳ và tần số mạch LC",
+            "Biến đổi giữa q, i, u theo thời gian",
+            "Tính năng lượng điện trường và từ trường"
+        ],
+        "danh_sach_cong_thuc": [
+            "q = Q0cos(ωt + φ)",
+            "u = q/C = U0cos(ωt + φ)",
+            "i = dq/dt = -ωQ0sin(ωt + φ) = I0cos(ωt + φ + π/2)",
+            "I0 = ωQ0 ; Q0 = CU0 ; I0 = U0√(C/L)",
+            "ω = 1/√(LC)",
+            "T = 2π√(LC)",
+            "f = 1/(2π√(LC))",
+            "Năng lượng điện trường: WC = 1/2 Cu² = q²/(2C)",
+            "Năng lượng từ trường: WL = 1/2 Li²",
+            "Năng lượng điện từ: W = WC + WL = 1/2 CU0² = 1/2 LI0² = Q0²/(2C) = const",
+            "λ = cT = 2πc√(LC)"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/6AZQ8LIP-EM",
+        "mo_ta_ngan": "Full công thức dao động điện từ lớp 12 theo chương.",
+        "icon": "fa-solid fa-radio"
+    },
+    {
+        "id": 8,
+        "ten_cong_thuc": "Tổng hợp công thức Chương V - Sóng ánh sáng",
+        "cong_thuc": "Bộ công thức quang học sóng và giao thoa ánh sáng",
+        "nha_khoa_hoc": "Tổng hợp Vật Lí 12",
+        "anh_nha_khoa_hoc": "",
+        "hoan_canh_lich_su": "Các công thức quang học sóng được xây dựng từ lý thuyết sóng điện từ và thực nghiệm giao thoa ánh sáng, dùng để mô tả tính chất sóng của ánh sáng.",
+        "y_nghia": "Giải các bài toán vận tốc ánh sáng trong môi trường, vân giao thoa, khoảng vân và đặc trưng phổ ánh sáng nhìn thấy.",
+        "ung_dung": [
+            "Bài toán giao thoa khe Young",
+            "Tính chiết suất và bước sóng trong môi trường",
+            "Ghi nhớ dải quang phổ nhìn thấy"
+        ],
+        "danh_sach_cong_thuc": [
+            "Tốc độ ánh sáng trong chân không: c = 3×10^8 m/s",
+            "Tốc độ trong môi trường: v = c/n",
+            "Bước sóng trong chân không: λ0 = c/f",
+            "Bước sóng trong môi trường: λ = λ0/n",
+            "Khoảng vân: i = λD/a",
+            "Vị trí vân sáng: xs = ki (với k = 0, ±1, ±2...)",
+            "Vị trí vân tối: xt = (k + 1/2)i",
+            "Hiệu đường đi vân sáng: Δd = d2 - d1 = kλ",
+            "Hiệu đường đi vân tối: Δd = d2 - d1 = (k + 1/2)λ",
+            "Chiết suất: nđỏ < ncam < nvàng < nlục < nlam < nchàm < ntím",
+            "Bước sóng: λđỏ > λcam > λvàng > λlục > λlam > λchàm > λtím",
+            "Giới hạn ánh sáng nhìn thấy: 0,38 μm (tím) ≤ λ ≤ 0,76 μm (đỏ)"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/5x1jBf0fH8k",
+        "mo_ta_ngan": "Full công thức quang học sóng lớp 12 theo chương.",
+        "icon": "fa-solid fa-lightbulb"
+    },
+    {
+        "id": 9,
+        "ten_cong_thuc": "Tổng hợp công thức Chương VI - Lượng tử ánh sáng",
+        "cong_thuc": "Bộ công thức photon và hiện tượng quang điện",
+        "nha_khoa_hoc": "Tổng hợp Vật Lí 12",
+        "anh_nha_khoa_hoc": "",
+        "hoan_canh_lich_su": "Lượng tử ánh sáng ra đời từ các công trình của Planck và Einstein, giải thích bản chất hạt của ánh sáng và hiện tượng quang điện.",
+        "y_nghia": "Dùng giải các bài toán năng lượng photon, giới hạn quang điện, động năng electron quang điện và điều kiện bức xạ.",
+        "ung_dung": [
+            "Giải bài toán quang điện ngoài",
+            "Tính công thoát và tần số giới hạn",
+            "So sánh photon kích thích và phát quang"
+        ],
+        "danh_sach_cong_thuc": [
+            "Năng lượng photon: ε = hf = hc/λ",
+            "Hằng số Planck: h = 6,625×10^-34 J.s",
+            "Hệ thức Einstein: hf = A + Kmax = A + 1/2mv²max",
+            "Công thoát: A = hc/λ0",
+            "Điều kiện xảy ra quang điện: λ ≤ λ0 (hoặc f ≥ f0)",
+            "Công suất nguồn sáng: P = N.ε = N.hf (N là số photon phát ra trong 1s)",
+            "Định luật Stokes (Quang phát quang): λhq > λkt (hay Ehq < Ekt)"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/vsQzY6qj0z8",
+        "mo_ta_ngan": "Full công thức lượng tử ánh sáng lớp 12 theo chương.",
+        "icon": "fa-solid fa-sun"
+    },
+    {
+        "id": 10,
+        "ten_cong_thuc": "Tổng hợp công thức Chương VI - Mẫu nguyên tử Bo",
+        "cong_thuc": "Bộ công thức mức năng lượng Bohr và quang phổ Hydro",
+        "nha_khoa_hoc": "Tổng hợp Vật Lí 12",
+        "anh_nha_khoa_hoc": "",
+        "hoan_canh_lich_su": "Mẫu nguyên tử Bohr là bước chuyển tiếp quan trọng giữa vật lí cổ điển và cơ học lượng tử trong việc mô tả quang phổ nguyên tử Hydro.",
+        "y_nghia": "Giúp giải các dạng bài liên quan đến mức năng lượng, bước sóng phát xạ/hấp thụ.",
+        "ung_dung": [
+            "Bài toán dãy phổ Hydro (Lyman, Balmer, Paschen)",
+            "Tính chênh lệch mức năng lượng và bán kính quỹ đạo"
+        ],
+        "danh_sach_cong_thuc": [
+            "Mức năng lượng: En = -13,6/n² (eV)",
+            "Tiên đề bức xạ: ΔE = E_cao - E_thấp = hf = hc/λ",
+            "Bán kính quỹ đạo dừng: rn = n²r0",
+            "Bán kính Bo: r0 = 5,3×10^-11 m",
+            "Tên các quỹ đạo: K(n=1), L(n=2), M(n=3), N(n=4), O(n=5), P(n=6)"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/S1t4qQ6qS8Q",
+        "mo_ta_ngan": "Full công thức mẫu nguyên tử Bo và tia laze theo tài liệu ôn tập.",
+        "icon": "fa-solid fa-atom"
+    },
+    {
+        "id": 11,
+        "ten_cong_thuc": "Tổng hợp công thức Chương VII - Hạt nhân nguyên tử",
+        "cong_thuc": "Bộ công thức hạt nhân, năng lượng liên kết và định luật phóng xạ",
+        "nha_khoa_hoc": "Tổng hợp Vật Lí 12",
+        "anh_nha_khoa_hoc": "",
+        "hoan_canh_lich_su": "Vật lí hạt nhân nghiên cứu cấu trúc hạt nhân, phân rã phóng xạ và phản ứng hạt nhân, có ý nghĩa lớn trong năng lượng và y học hạt nhân.",
+        "y_nghia": "Giải bài toán định luật phóng xạ, chu kỳ bán rã, năng lượng phản ứng và các đại lượng hạt nhân.",
+        "ung_dung": [
+            "Tính số hạt còn lại sau thời gian t",
+            "Tính năng lượng tỏa/thu trong phản ứng hạt nhân",
+            "Giải bài toán độ phóng xạ và chu kỳ bán rã"
+        ],
+        "danh_sach_cong_thuc": [
+            "Số khối: A = Z + N",
+            "Bán kính hạt nhân: R = R0.A^(1/3) (với R0 = 1,2×10^-15 m)",
+            "Hệ thức Einstein: E = mc²",
+            "Đơn vị khối lượng nguyên tử: 1u = 1,66055×10^-27 kg ≈ 931,5 MeV/c²",
+            "Khối lượng nguyên tử ≈ A.u",
+            "Độ hụt khối: Δm = Z.mp + (A - Z).mn - mX",
+            "Năng lượng liên kết: Wlk = Δm.c²",
+            "Năng lượng liên kết riêng: ε = Wlk / A",
+            "Năng lượng phản ứng: Q = (mtrước - msau)c² = Wlk_sau - Wlk_trước",
+            "Định luật phóng xạ (Số hạt): N = N0.e^(-λt) = N0.(1/2)^(t/T)",
+            "Định luật phóng xạ (Khối lượng): m = m0.e^(-λt) = m0.(1/2)^(t/T)",
+            "Hằng số phóng xạ: λ = ln2 / T",
+            "Độ phóng xạ: H = λN = H0.e^(-λt)"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/7fM4K2Q4sQk",
+        "mo_ta_ngan": "Full công thức hạt nhân nguyên tử và phóng xạ lớp 12.",
+        "icon": "fa-solid fa-radiation"
+    },
+    {
+        "id": 12,
+        "ten_cong_thuc": "Tổng hợp chuyển động và nhiệt học cơ bản",
+        "cong_thuc": "Bộ công thức nhiệt học, khí lí tưởng và động học phân tử",
+        "nha_khoa_hoc": "Tổng hợp ôn tập Vật Lí",
+        "anh_nha_khoa_hoc": "",
+        "hoan_canh_lich_su": "Nhóm công thức này thường xuất hiện trong các tài liệu ôn tập mở rộng, kết nối nhiệt động lực học, thuyết động học phân tử và phương trình trạng thái khí lí tưởng.",
+        "y_nghia": "Bổ trợ cho việc làm bài tổng hợp liên chương, đặc biệt ở các phần nhiệt lượng, nội năng, phương trình khí.",
+        "ung_dung": [
+            "Bài toán trao đổi nhiệt và chuyển thể",
+            "Bài toán khí lí tưởng và định luật chất khí",
+            "Tính động năng phân tử trung bình"
+        ],
+        "danh_sach_cong_thuc": [
+            "Nhiệt lượng thu/tỏa: Q = mcΔt",
+            "Nhiệt nóng chảy: Q = λm",
+            "Nhiệt hóa hơi: Q = Lm",
+            "Nguyên lí I NĐLH: ΔU = Q + A",
+            "Phương trình trạng thái: pV = nRT = (m/M)RT",
+            "Phương trình Claperon: p1V1/T1 = p2V2/T2",
+            "Định luật Boyle-Mariotte (T=const): p1V1 = p2V2",
+            "Định luật Charles (p=const): V1/T1 = V2/T2",
+            "Định luật Gay-Lussac (V=const): p1/T1 = p2/T2",
+            "Nhiệt độ tuyệt đối: T(K) = t(°C) + 273",
+            "Động năng phân tử trung bình: Eđ = 3/2 kT",
+            "Áp suất theo động năng: p = 2/3 n_0 Eđ (n_0 là mật độ hạt)",
+            "Số hạt: N = (m/M) × NA",
+            "Hằng số Avogadro: NA = 6,022×10^23 mol^-1"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/ekr2nIex040",
+        "mo_ta_ngan": "Nhóm công thức nhiệt học và khí lí tưởng thường gặp trong tài liệu ôn tập.",
+        "icon": "fa-solid fa-temperature-high"
+    },
+
+    {
+        "id": 13,
+        "ten_cong_thuc": "Định luật Vạn vật hấp dẫn",
+        "cong_thuc": "F = G × (m1 × m2) / r²",
+        "nha_khoa_hoc": "Isaac Newton (1643 - 1727)",
+        "anh_nha_khoa_hoc": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Portrait_of_Sir_Isaac_Newton%2C_1689.jpg/440px-Portrait_of_Sir_Isaac_Newton%2C_1689.jpg",
+        "hoan_canh_lich_su": "Cùng với các định luật về chuyển động, Newton đã công bố định luật vạn vật hấp dẫn trong cuốn Principia (1687). Ông nhận ra rằng lực làm quả táo rơi xuống đất cũng chính là lực giữ Mặt Trăng quay quanh Trái Đất và các hành tinh quay quanh Mặt Trời. Điều này đã hợp nhất thiên văn học và vật lý học trên Trái Đất thành một thể thống nhất.",
+        "y_nghia": "Giải thích lực hút giữa mọi vật thể có khối lượng trong vũ trụ. Lực này tỷ lệ thuận với tích khối lượng của hai vật và tỷ lệ nghịch với bình phương khoảng cách giữa chúng.",
+        "ung_dung": [
+            "Tính toán quỹ đạo vệ tinh nhân tạo",
+            "Dự đoán thủy triều",
+            "Đo khối lượng của Trái Đất và Mặt Trời",
+            "Tính toán đường bay của tàu vũ trụ"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/Ym6epkXPEOE",
+        "mo_ta_ngan": "Mọi vật trong vũ trụ đều hút nhau với một lực gọi là lực hấp dẫn.",
+        "icon": "fa-solid fa-earth-americas"
+    },
+    {
+        "id": 14,
+        "ten_cong_thuc": "Lực đẩy Archimedes",
+        "cong_thuc": "FA = d × V",
+        "nha_khoa_hoc": "Archimedes (287 TCN - 212 TCN)",
+        "anh_nha_khoa_hoc": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Domenico-Fetti_Archimedes_1620.jpg/440px-Domenico-Fetti_Archimedes_1620.jpg",
+        "hoan_canh_lich_su": "Truyền thuyết kể rằng, khi đang ngâm mình trong bồn tắm, Archimedes nhận thấy mực nước dâng lên khi ông bước vào. Ông sung sướng chạy ra đường và hét lên 'Eureka!' (Ta tìm ra rồi). Khám phá này giúp ông giải quyết bài toán kiểm tra vương miện của nhà vua Syracuse có bị pha bạc hay không mà không cần nấu chảy nó ra.",
+        "y_nghia": "Xác định độ lớn của lực đẩy ngược từ dưới lên trên của chất lỏng (hoặc chất khí) tác dụng lên một vật nhúng trong nó. Lực này bằng đúng trọng lượng của phần chất lỏng bị vật chiếm chỗ.",
+        "ung_dung": [
+            "Thiết kế tàu thuyền và tàu ngầm",
+            "Chế tạo khinh khí cầu",
+            "Đo trọng lượng riêng của vật rắn",
+            "Thiết kế các hệ thống phao nổi và áo phao"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/eQsmq3Hu9HA",
+        "mo_ta_ngan": "Lực đẩy chất lỏng tác dụng lên vật nhúng trong nó bằng trọng lượng phần chất lỏng bị chiếm chỗ.",
+        "icon": "fa-solid fa-water"
+    },
+    {
+        "id": 15,
+        "ten_cong_thuc": "Hệ thức năng lượng - khối lượng",
+        "cong_thuc": "E = m × c²",
+        "nha_khoa_hoc": "Albert Einstein (1879 - 1955)",
+        "anh_nha_khoa_hoc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/440px-Albert_Einstein_Head.jpg",
+        "hoan_canh_lich_su": "Năm 1905, được mệnh danh là 'Năm kỳ diệu' của vật lý, Einstein công bố 4 bài báo làm thay đổi hoàn toàn khoa học. Phương trình E=mc² nằm trong bài báo cuối cùng, chỉ ra rằng khối lượng và năng lượng là hai dạng biểu hiện khác nhau của cùng một thực thể và có thể chuyển hóa qua lại.",
+        "y_nghia": "Chứng minh một khối lượng cực nhỏ có thể chuyển hóa thành một lượng năng lượng khổng lồ (vì c là tốc độ ánh sáng rất lớn). Đây là phương trình nổi tiếng nhất thế giới và là nền tảng của vật lý hạt nhân.",
+        "ung_dung": [
+            "Sản xuất năng lượng trong lò phản ứng hạt nhân",
+            "Giải thích nguồn năng lượng tỏa ra từ Mặt Trời và các ngôi sao",
+            "Công nghệ chụp PET trong y tế học hạt nhân",
+            "Tính toán độ hụt khối trong phản ứng phân hạch và nhiệt hạch"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/hW7DW9NixzU",
+        "mo_ta_ngan": "Năng lượng bằng khối lượng nhân với bình phương tốc độ ánh sáng. Trái tim của vật lý hạt nhân.",
+        "icon": "fa-solid fa-atom"
+    },
+    {
+        "id": 16,
+        "ten_cong_thuc": "Định luật Khúc xạ ánh sáng (Snell)",
+        "cong_thuc": "n1 × sin(i) = n2 × sin(r)",
+        "nha_khoa_hoc": "Willebrord Snellius (1580 - 1626)",
+        "anh_nha_khoa_hoc": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Willebrord_Snellius.jpg/440px-Willebrord_Snellius.jpg",
+        "hoan_canh_lich_su": "Dù hiện tượng khúc xạ đã được Ptolemy nghiên cứu từ thời cổ đại, nhưng phải đến năm 1621, nhà toán học người Hà Lan Willebrord Snellius mới tìm ra công thức toán học chính xác mô tả mối quan hệ giữa góc tới và góc khúc xạ, mở đường cho quang học hiện đại cất cánh.",
+        "y_nghia": "Mô tả sự đổi hướng của tia sáng khi đi qua mặt phân cách giữa hai môi trường trong suốt có chiết suất khác nhau. Tỉ số giữa sin góc tới và sin góc khúc xạ là một hằng số.",
+        "ung_dung": [
+            "Thiết kế thấu kính cho kính cận, kính viễn",
+            "Chế tạo kính hiển vi, kính thiên văn, máy ảnh",
+            "Công nghệ cáp quang truyền tải internet băng thông rộng",
+            "Giải thích các hiện tượng thiên nhiên như ảo ảnh, cầu vồng"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/y55tzg_jW9I",
+        "mo_ta_ngan": "Mô tả góc lệch của tia sáng khi truyền qua hai môi trường trong suốt khác nhau.",
+        "icon": "fa-solid fa-glasses"
+    },
+    {
+        "id": 17,
+        "ten_cong_thuc": "Lực Lorentz",
+        "cong_thuc": "f = |q| × v × B × sin(α)",
+        "nha_khoa_hoc": "Hendrik Lorentz (1853 - 1928)",
+        "anh_nha_khoa_hoc": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Hendrik_Antoon_Lorentz.jpg/440px-Hendrik_Antoon_Lorentz.jpg",
+        "hoan_canh_lich_su": "Cuối thế kỷ 19, khi các nhà khoa học đang cố gắng thống nhất điện học và từ học, nhà vật lý người Hà Lan Hendrik Lorentz đã phát triển lý thuyết electron. Ông đưa ra công thức tính toán lực mà từ trường tác dụng lên một hạt điện tích đang chuyển động, hoàn thiện nền tảng của điện từ học cổ điển.",
+        "y_nghia": "Xác định độ lớn và chiều của lực từ tác dụng lên hạt mang điện chuyển động trong từ trường. Hướng của lực này được xác định dễ dàng bằng quy tắc bàn tay trái.",
+        "ung_dung": [
+            "Hoạt động của ống tia âm cực (TV CRT cũ)",
+            "Chế tạo máy gia tốc hạt nhân (như máy ở CERN)",
+            "Chế tạo khối phổ kế để tách và đo khối lượng các đồng vị",
+            "Giải thích hiện tượng cực quang tuyệt đẹp ở hai cực Trái Đất"
+        ],
+        "video_youtube": "https://www.youtube.com/embed/01nF7_9P2Lg",
+        "mo_ta_ngan": "Lực từ trường tác dụng làm lệch quỹ đạo của một hạt điện tích đang chuyển động.",
+        "icon": "fa-solid fa-magnet"
+    }
+]
